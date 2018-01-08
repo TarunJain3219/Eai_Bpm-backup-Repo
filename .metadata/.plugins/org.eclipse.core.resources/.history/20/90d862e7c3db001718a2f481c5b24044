@@ -1,0 +1,64 @@
+package com.example.orchard.main;
+
+import java.io.Serializable;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Lead")
+
+public class Lead implements Serializable{
+	private static final long serialVersionUID = 1L;	
+	
+	@Id
+	@Column(name="MID_LEAD")
+	private String mid_lead;
+	
+	@Column(name="LEAD_NAME")
+	private String lead_name;
+	
+	@Column(name="TRACK")
+	private String track;
+
+	@OneToOne(fetch = FetchType.LAZY, mappedBy = "CampusMind", cascade = CascadeType.ALL)
+	private CampusMind campusMind;
+
+	public CampusMind getCampusMind() {
+		return campusMind;
+	}
+
+	public void setCampusMind(CampusMind campusMind) {
+		this.campusMind = campusMind;
+	}
+
+	public String getMid_lead() {
+		return mid_lead;
+	}
+
+	public void setMid_lead(String mid_lead) {
+		this.mid_lead = mid_lead;
+	}
+
+	public String getLead_name() {
+		return lead_name;
+	}
+
+	public void setLead_name(String lead_name) {
+		this.lead_name = lead_name;
+	}
+
+	public String getTrack() {
+		return track;
+	}
+
+	public void setTrack(String track) {
+		this.track = track;
+	}
+	
+}

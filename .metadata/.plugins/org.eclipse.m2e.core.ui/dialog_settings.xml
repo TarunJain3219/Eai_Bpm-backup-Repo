@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.LocalArchetypeCatalogDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="560" key="x"/>
+		<item value="76" key="y"/>
+		<item value="531" key="height"/>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="SpringRestTemplate"/>
+			<item value="RESTServices"/>
+			<item value="openJMS"/>
+			<item value="RESTfulJerseyExample"/>
+			<item value="Spring4Hibernate4Integration"/>
+			<item value="ORCHARD_PROGRAM"/>
+			<item value="OrchardProgram"/>
+			<item value="HibernateProject"/>
+			<item value="HibernateExample"/>
+			<item value="Test123"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="SpringRestTemplate"/>
+			<item value="RESTServices"/>
+			<item value="openJMS"/>
+			<item value="RESTfulJerseyExample"/>
+			<item value="Spring4Hibernate4Integration"/>
+			<item value="ORCHARD_PROGRAM"/>
+			<item value="OrchardProgram"/>
+			<item value="HibernateProject"/>
+			<item value="HibernateExample"/>
+			<item value="Test123"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+		<list key="archetypeVersion">
+			<item value="1.9"/>
+			<item value="2.26"/>
+		</list>
+		<list key="archetypeGroupId">
+			<item value="com.sun.jersey.archetypes"/>
+			<item value="org.glassfish.jersey.archetypes"/>
+		</list>
+		<list key="archetypeArtifactId">
+			<item value="jersey-quickstart-webapp"/>
+		</list>
+		<list key="repositoryUrl">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.RemoteArchetypeCatalogDialog">
+		<list key="catalogUrl">
+			<item value="http://repo1.maven.org/maven2/archetype-catalog.xml"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\M1043219\workspace\Spring4Hibernate4_Integration\src\main\webapp\WEB-INF\mvc-dispatcher-servlet.xml"/>
+			<item value="C:\Users\M1043219\workspace\Spring_Hibernate_Integration\src\main\resources\application.properties"/>
+			<item value="C:\Users\M1043219\workspace\ORCHARD_PROGRAM\src\com\example\orchardprogram\main\DOAclassImpl.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.example.SpringRestClient"/>
+			<item value="com.ranga.RESTService"/>
+			<item value="com.ranga"/>
+			<item value="com.ranga.Spring4Hibernate4_Integration"/>
+			<item value="com.ranga.SpringHibernate_Integration"/>
+			<item value="com.ranga.spring"/>
+			<item value="com.ranga.Spring_Hibernate_Integration"/>
+			<item value="com.ranga.Spring4Hibernate4Integration"/>
+		</list>
+		<list key="groupId">
+			<item value="com.example"/>
+			<item value="com.ranga"/>
+		</list>
+		<list key="artifactId">
+			<item value="SpringRestClient"/>
+			<item value="RESTService"/>
+			<item value="Spring4Hibernate4_Integration"/>
+			<item value="SpringHibernate_Integration"/>
+			<item value="spring"/>
+			<item value="Spring_Hibernate_Integration"/>
+			<item value="Spring4Hibernate4Integration"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

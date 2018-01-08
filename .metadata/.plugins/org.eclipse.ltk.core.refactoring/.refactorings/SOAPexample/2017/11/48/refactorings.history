@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.journaldev.jaxws.beans.PersonServiceImp&apos; to &apos;PersonServiceImpl&apos;&#x0D;&#x0A;- Original project: &apos;SOAPexample&apos;&#x0D;&#x0A;- Original element: &apos;com.journaldev.jaxws.beans.PersonServiceImp&apos;&#x0D;&#x0A;- Renamed element: &apos;com.journaldev.jaxws.beans.PersonServiceImpl&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PersonServiceImp&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.journaldev.jaxws.beans{PersonServiceImp.java[PersonServiceImp" matchStrategy="1" name="PersonServiceImpl" qualified="false" references="true" similarDeclarations="false" stamp="1512020478517" textual="false" version="1.0"/>
+</session>

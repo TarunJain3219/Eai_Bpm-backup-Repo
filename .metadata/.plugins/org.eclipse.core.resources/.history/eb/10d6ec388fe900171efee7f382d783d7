@@ -1,0 +1,23 @@
+package com.ranga.test;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+import com.ranga.entity.Employee;
+
+public class TestEmployee {
+	
+	Employee e=null;
+	
+	@Before
+	public void setUp(){
+		e=new Employee();
+	}
+	@Test
+	public void Test(){
+		when(e.getSalary()).thenReturn(400000);
+		assertEquals(400000,e.getSalary());
+	}
+}

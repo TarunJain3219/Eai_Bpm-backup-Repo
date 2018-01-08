@@ -1,0 +1,28 @@
+package com.ranga.test;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.MockitoAnnotations.Mock;
+
+import static org.mockito.Mockito.*;
+import static org.junit.Assert.*;
+
+
+import com.ranga.entity.Employee;
+
+public class TestEmployeeMokito {
+	
+	
+	Employee e;
+	
+	@Before
+	public void setUp(){
+		e=mock(Employee.class);
+	}
+	@Test
+	public void TestMokito(){
+		when(e.getAge()).thenReturn(23);
+		assertEquals(23,e.getAge());
+		verify(e).getAge();
+	}
+}

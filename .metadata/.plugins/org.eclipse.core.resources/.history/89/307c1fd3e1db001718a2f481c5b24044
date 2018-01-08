@@ -1,0 +1,45 @@
+package com.example.orchard.main;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.omg.CORBA.PUBLIC_MEMBER;
+
+import com.example.orchard.util.HibernateUtil;
+
+public class Main {
+	
+	public static void main(String args[]){
+		DOAclassImpl  doaClassImpl=new DOAclassImpl();
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction transaction = null;
+		try {
+			transaction = session.beginTransaction();
+			CampusMind campusMind=new CampusMind();
+			campusMind.setMid_campus_mind("M1043219");
+			campusMind.setName("Ashish");
+			campusMind.setTrack("EAI");
+			
+			Lead lead=new Lead();
+			lead.setLead_name("PREM");
+			lead.setMid_lead("M104310");
+			
+			
+			
+			campusMind.setLead(lead);
+			session.save(lead);
+			session.getTransaction().commit();
+
+			System.out.println("Done");
+		
+	
+		} catch (HibernateException e) {
+			transaction.rollback();
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+	}
+	
+
+}

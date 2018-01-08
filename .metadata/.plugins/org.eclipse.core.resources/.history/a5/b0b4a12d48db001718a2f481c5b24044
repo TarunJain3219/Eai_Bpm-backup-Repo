@@ -1,0 +1,49 @@
+package com.example.orchard.main;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name="ORCHARD")
+public class Orchard implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@Column(name="MID_LEAD")
+	private String mid_lead;
+	
+	@Column(name="TRACK")
+	private String track;
+	
+	@Column(name="MID")
+	private String mid_campus_mind;
+
+	public String getMid_lead() {
+		return mid_lead;
+	}
+
+	public void setMid_lead(String mid_lead) {
+		this.mid_lead = mid_lead;
+	}
+
+	public String getTrack() {
+		return track;
+	}
+
+	public void setTrack(String track) {
+		this.track = track;
+	}
+
+	public String getMid_campus_mind() {
+		return mid_campus_mind;
+	}
+
+	public void setMid_campus_mind(String mid_campus_mind) {
+		this.mid_campus_mind = mid_campus_mind;
+	}
+	
+	
+}

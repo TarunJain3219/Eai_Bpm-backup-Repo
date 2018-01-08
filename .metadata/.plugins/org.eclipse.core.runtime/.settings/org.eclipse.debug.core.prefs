@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n<expression enabled\="true" text\="num"/>\r\n<expression enabled\="true" text\="dem"/>\r\n<expression enabled\="true" text\="gcd"/>\r\n<expression enabled\="true" text\="bucket"/>\r\n<expression enabled\="true" text\="result.replaceAll(&quot; &quot;,&quot;&quot;)"/>\r\n<expression enabled\="true" text\="result"/>\r\n</watchExpressions>\r\n

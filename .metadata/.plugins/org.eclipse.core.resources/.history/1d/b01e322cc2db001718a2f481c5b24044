@@ -1,0 +1,39 @@
+package com.example.orchard.main;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.omg.CORBA.PUBLIC_MEMBER;
+
+import com.example.orchard.util.HibernateUtil;
+
+public class Main {
+	
+	public static void main(String args[]){
+		DOAclassImpl  doaClassImpl=new DOAclassImpl();
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction transaction = null;
+		try {
+			transaction = session.beginTransaction();
+			/*Address address1 = new Address("OMR Road", "Chennai", "TN", "600097");
+			Address address2 = new Address("Ring Road", "Banglore", "Karnataka", "560000");
+			Student student1 = new Student("Eswar", address1);
+			Student student2 = new Student("Joe", address2);*/
+			CampusMind campusMind=new CampusMind("M1043210","Ashish","EAI");
+			CampusMind campusMind1=new CampusMind("M1043219","Tarun","EAI");
+			Lead lead=new Lead("M10421","Prem",campusMind);
+			Lead lead1=new Lead("M10422","Avanish",campusMind1);
+		
+			session.save(lead);
+			session.save(lead1);
+			transaction.commit();
+		} catch (HibernateException e) {
+			transaction.rollback();
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+	}
+	
+
+}

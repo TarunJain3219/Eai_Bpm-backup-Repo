@@ -1,0 +1,9 @@
+127.0.0.1 - - [22/Dec/2017:09:22:58 +0530] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [22/Dec/2017:09:23:45 +0530] "GET /Spring4Hibernate4_Integration/AllEmployees HTTP/1.1" 200 220
+0:0:0:0:0:0:0:1 - - [22/Dec/2017:09:46:34 +0530] "GET /Spring4Hibernate4_Integration/ HTTP/1.1" 200 340
+0:0:0:0:0:0:0:1 - - [22/Dec/2017:09:46:49 +0530] "GET /Spring4Hibernate4_Integration/getAllEmployees HTTP/1.1" 200 3994
+0:0:0:0:0:0:0:1 - - [22/Dec/2017:09:47:53 +0530] "GET /Spring4Hibernate4_Integration/createEmployees HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [22/Dec/2017:09:48:16 +0530] "GET /Spring4Hibernate4_Integration/createEmployee HTTP/1.1" 200 4001
+0:0:0:0:0:0:0:1 - - [22/Dec/2017:09:50:45 +0530] "GET /Spring4Hibernate4_Integration/createEmployee HTTP/1.1" 200 4001
+0:0:0:0:0:0:0:1 - - [22/Dec/2017:09:51:27 +0530] "GET /Spring4Hibernate4_Integration/createEmployee HTTP/1.1" 200 4001
+0:0:0:0:0:0:0:1 - - [22/Dec/2017:10:04:26 +0530] "GET /Spring4Hibernate4_Integration/createEmployee HTTP/1.1" 200 4001

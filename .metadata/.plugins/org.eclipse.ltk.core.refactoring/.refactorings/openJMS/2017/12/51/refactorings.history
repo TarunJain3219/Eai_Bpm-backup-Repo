@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;openJMS.Reciever.java&apos; to &apos;Receiver.java&apos;&#x0D;&#x0A;- Original project: &apos;openJMS&apos;&#x0D;&#x0A;- Original element: &apos;openJMS.Reciever.java&apos;&#x0D;&#x0A;- Renamed element: &apos;openJMS.Receiver.java&apos;" description="Rename compilation unit &apos;Reciever.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;openJMS{Reciever.java" name="Receiver.java" references="false" stamp="1513765086500" version="1.0"/>
+</session>
