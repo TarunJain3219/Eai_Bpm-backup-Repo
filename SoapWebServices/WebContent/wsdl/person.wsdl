@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="PersonService" targetNamespace="http://main.example.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://main.example.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://main.example.com/" schemaLocation="person_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="getId">
+    <wsdl:part name="parameters" element="tns:getId">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setId">
+    <wsdl:part name="parameters" element="tns:setId">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getIdResponse">
+    <wsdl:part name="parameters" element="tns:getIdResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setIdResponse">
+    <wsdl:part name="parameters" element="tns:setIdResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setAge">
+    <wsdl:part name="parameters" element="tns:setAge">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setAgeResponse">
+    <wsdl:part name="parameters" element="tns:setAgeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getName">
+    <wsdl:part name="parameters" element="tns:getName">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setName">
+    <wsdl:part name="parameters" element="tns:setName">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setNameResponse">
+    <wsdl:part name="parameters" element="tns:setNameResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAge">
+    <wsdl:part name="parameters" element="tns:getAge">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAgeResponse">
+    <wsdl:part name="parameters" element="tns:getAgeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getNameResponse">
+    <wsdl:part name="parameters" element="tns:getNameResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Person">
+    <wsdl:operation name="getId">
+      <wsdl:input name="getId" message="tns:getId">
+    </wsdl:input>
+      <wsdl:output name="getIdResponse" message="tns:getIdResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setId">
+      <wsdl:input name="setId" message="tns:setId">
+    </wsdl:input>
+      <wsdl:output name="setIdResponse" message="tns:setIdResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setAge">
+      <wsdl:input name="setAge" message="tns:setAge">
+    </wsdl:input>
+      <wsdl:output name="setAgeResponse" message="tns:setAgeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getName">
+      <wsdl:input name="getName" message="tns:getName">
+    </wsdl:input>
+      <wsdl:output name="getNameResponse" message="tns:getNameResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setName">
+      <wsdl:input name="setName" message="tns:setName">
+    </wsdl:input>
+      <wsdl:output name="setNameResponse" message="tns:setNameResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAge">
+      <wsdl:input name="getAge" message="tns:getAge">
+    </wsdl:input>
+      <wsdl:output name="getAgeResponse" message="tns:getAgeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PersonServiceSoapBinding" type="tns:Person">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getId">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getId">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setId">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setId">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setAge">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setAge">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setAgeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getName">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getName">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getNameResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setName">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setName">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setNameResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAge">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAge">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAgeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PersonService">
+    <wsdl:port name="PersonPort" binding="tns:PersonServiceSoapBinding">
+      <soap:address location="http://localhost:6666/SoapExample/services"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

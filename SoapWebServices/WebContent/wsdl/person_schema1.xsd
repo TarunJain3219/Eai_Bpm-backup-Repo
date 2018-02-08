@@ -1,0 +1,87 @@
+<xs:schema xmlns:tns="http://main.example.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://main.example.com/" version="1.0">
+
+  <xs:element name="getAge" type="tns:getAge"/>
+
+  <xs:element name="getAgeResponse" type="tns:getAgeResponse"/>
+
+  <xs:element name="getId" type="tns:getId"/>
+
+  <xs:element name="getIdResponse" type="tns:getIdResponse"/>
+
+  <xs:element name="getName" type="tns:getName"/>
+
+  <xs:element name="getNameResponse" type="tns:getNameResponse"/>
+
+  <xs:element name="setAge" type="tns:setAge"/>
+
+  <xs:element name="setAgeResponse" type="tns:setAgeResponse"/>
+
+  <xs:element name="setId" type="tns:setId"/>
+
+  <xs:element name="setIdResponse" type="tns:setIdResponse"/>
+
+  <xs:element name="setName" type="tns:setName"/>
+
+  <xs:element name="setNameResponse" type="tns:setNameResponse"/>
+
+  <xs:complexType name="getId">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getIdResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setId">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setIdResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="setAge">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setAgeResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getName">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getNameResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setName">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="setNameResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getAge">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getAgeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
